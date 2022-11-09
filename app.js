@@ -1,3 +1,5 @@
+const ipAddress = '161.35.90.67'
+
 const express = require("express")
 const app = express()
 const cors = require("cors")
@@ -24,6 +26,6 @@ app.use(
 app.use(cors({origin: "http://localhost:3000", credentials: true, methods: "GET,HEAD,PUT,PATCH,POST,DELETE"}))
 app.use(express.json())
 
-app.listen(4000)
+app.listen(4005)
 
 app.use("/", mainRouter)
